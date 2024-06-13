@@ -1,3 +1,4 @@
+import 'package:client/core/theme.dart';
 import 'package:client/features/auth/view/pages/sign_up_page.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
+      theme: AppTheme.darkThemeMode,
       home: SignUpPage(),
     );
   }
